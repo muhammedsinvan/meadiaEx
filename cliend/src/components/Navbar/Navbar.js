@@ -1,5 +1,6 @@
  import React, { useState } from 'react';
  import './Navbar.css';
+ import CloseIcon from '@mui/icons-material/Close';
 
 
 const Navbar = () => {
@@ -16,7 +17,7 @@ const Navbar = () => {
         <img src='https://www.exmedia.in/assets/images/logo/exlogo.png' alt='LOGO'/>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
-          <Hamburger />
+          {showNavbar ? <CloseIcon style={{width:"2rem",height:"3rem"}}/> : <Hamburger />}
         </div>
         <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>

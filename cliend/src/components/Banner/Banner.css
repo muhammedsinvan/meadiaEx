@@ -4,6 +4,7 @@
 
 .banner-content {
   display: flex;
+  z-index: 900;
 }
 
 .text-content {
