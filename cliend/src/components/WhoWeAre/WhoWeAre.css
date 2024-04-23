@@ -1,0 +1,60 @@
+.wwa-container{
+    padding: 10rem 0rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wwa-heading{
+    display: flex;
+    justify-content: center;
+}
+
+.wwa-heading text{
+    width: 35vw;
+    color: red;
+    font-weight: 700;
+    font-size: 4.5vw;
+    text-align: center;
+    line-height: 7rem;
+}
+
+.wwa-paragraph{
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.wwa-paragraph p{
+    color: white;
+    text-align: justify; 
+    width: 50%;
+}
+
+.wwa-footer{
+    margin-top: 2rem;
+}
+.wwa-footer text{
+    color: white;
+    font-family: cursive;
+}
+
+@media (max-width: 900px){
+    .wwa-paragraph{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .wwa-paragraph p{
+        color: white;
+        text-align: justify; 
+        width: 100%;
+    }
+    
+}

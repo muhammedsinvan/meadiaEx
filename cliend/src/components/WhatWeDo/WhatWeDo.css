@@ -1,0 +1,121 @@
+/* Base styles */
+.wwd-container {
+    margin-top: 5rem;
+}
+
+.wwd-dataContainer {
+    margin: 6rem 0rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.wwd-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wwd-mainHeading {
+    font-weight: 600;
+    font-size: 5rem;
+    color: black;
+}
+
+.wwd-img img{
+    width: 50vw;
+    transition: transform 0.3s ease;
+}
+
+.wwd-img img:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+  }
+  
+.wwd-descContainer {
+    margin:0rem 4rem;
+    
+
+    
+}
+
+.wwd-descContainer_heading{
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: cursive;
+    width: 30VW;
+}
+
+.wwd-descContainer_subHeading{
+    font-weight: 600;
+    width: 30vw;
+}
+
+.wwd-descContainer_desc{
+    color:rgb(136, 136, 136) ;
+    text-align: justify;
+    width: 30vw;
+    
+}
+
+.wwd-descContainer button{
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-weight: 550;
+    font-family: monospace;
+    letter-spacing: 2px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .wwd-container {
+        margin-top: 3rem;
+    }
+
+    .wwd-dataContainer {
+        flex-direction: column;
+    }
+
+    .wwd-img {
+        width: 100% !important;
+        order: -1 !important ; /* Set the image to appear before the text in column layout */
+    }
+
+    .wwd-img img{
+        width: 90%;
+        transition: transform 0.3s ease;
+    }
+
+    .wwd-descContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10%;
+        margin-top: 2rem;
+    }
+    .wwd-descContainer_heading{
+        width: 90%;
+    }
+    .wwd-descContainer_subHeading{
+        width: 90%;
+    }
+    .wwd-descContainer_desc{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wwd-mainHeading {
+        font-size: 3rem;
+    }
+
+    .wwd-img img {
+        width: 100%;
+    }
+
+    .wwd-descContainer {
+        margin-top: 1rem;
+    }
+}

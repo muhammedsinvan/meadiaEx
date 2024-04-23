@@ -1,0 +1,28 @@
+.whatsapp-container{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    cursor: pointer;
+    margin: 2rem;
+    width: 12rem;
+}
+
+.whatsapp-react{
+    background-color: rgb(72, 184, 72);
+    color: white;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+.whatsapp-icon{
+    width: 3rem;
+    height: 3rem;
+}
+
+.whatsapp-container text{
+    font-weight: 700;
+}
